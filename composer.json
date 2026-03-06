@@ -1,0 +1,27 @@
+{
+    "name": "ai-review-respond/ai-review-respond",
+    "description": "ai-review-respond/ai-review-respond",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "~6.7.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "AiReviewRespond\\AiReviewRespond",
+        "label": {
+            "de-DE": "Skeleton plugin",
+            "en-GB": "Skeleton plugin"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "AiReviewRespond\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AiReviewRespond\\Tests\\": "tests/"
+        }
+    }
+}
