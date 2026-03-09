@@ -11,6 +11,11 @@ use Shopware\Core\Framework\Plugin\Context\UpdateContext;
 
 class AiReviewRespond extends Plugin
 {
+    public function executeComposerCommands(): bool
+    {
+        return true;
+    }
+
     public function install(InstallContext $installContext): void
     {
         // Do stuff such as creating a new payment method

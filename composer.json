@@ -5,7 +5,8 @@
     "version": "1.0.0",
     "license": "MIT",
     "require": {
-        "shopware/core": "~6.7.0"
+        "shopware/core": "~6.7.0",
+        "openai-php/client": "^0.19.0"
     },
     "extra": {
         "shopware-plugin-class": "AiReviewRespond\\AiReviewRespond",
@@ -22,6 +23,12 @@
     "autoload-dev": {
         "psr-4": {
             "AiReviewRespond\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/runtime": true,
+            "php-http/discovery": true
         }
     }
 }
